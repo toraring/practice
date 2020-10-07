@@ -22,6 +22,7 @@ import Slider from "nouislider";
 // react plugin used to create switch buttons
 import Switch from "react-bootstrap-switch";
 import { Link } from "react-router-dom";
+import ImageButton from "components/UIComponents/imageButton3"
 
 // reactstrap components
 import {
@@ -66,70 +67,18 @@ class Basics extends React.Component {
                 className="btn-simple btn-round"
                 color="primary"
                 type="button"
+                Link tag={Link} to="/register-page"
               >
                 + More
               </Button>
             </Col>
           </Row>
-
             <Row>
 
-            <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/lora.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
-
-                <Link tag={Link} to="/landing-page">
-                  <p>CUCCI Jacky bag</p>
-                  <h5>4.2 ETH</h5>
-                </Link>
-              </Col>
-              
-              <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/lora.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
-
-                <Link tag={Link} to="/landing-page">
-                  <p>CUCCI Jacky bag</p>
-                  <h5>4.2 ETH</h5>
-                </Link>
-              </Col>
-
-              <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/lora.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
-
-                <Link tag={Link} to="/landing-page">
-                  <p>CUCCI Jacky bag</p>
-                  <h5>4.2 ETH</h5>
-                </Link>
-              </Col>
-
-
-              <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/lora.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
-
-                <Link tag={Link} to="/landing-page">
-                  <p>CUCCI Jacky bag</p>
-                  <h5>4.2 ETH</h5>
-                </Link>
-              </Col>
+            <Row>
+          <ImageButton imagePath="assets/img/gucci.jpg" linkPage="/register-page" itemName="GUCCI Snake wallet" itemPrice="41 ETH"></ImageButton>
+        </Row>
+      
             </Row>
 
           {/* ---------------------------------------- */}
@@ -145,69 +94,82 @@ class Basics extends React.Component {
                 className="btn-simple btn-round"
                 color="info"
                 type="button"
+                Link tag={Link} to="/landing-page"
               >
                 + More
               </Button>
             </Col>
           </Row>
 
+
             <Row>
-
             <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/mike.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
-
-                <Link tag={Link} to="/landing-page">
-                  <p>FENDI boston bag</p>
-                  <h5>3.7 ETH</h5>
-                </Link>
-              </Col>
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/landing-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/air jordan old.jpg")}
+              style={{ width: "250px" }}
+              Link tag={Link} to="/landing-page"
+            />
+          </button>
+            <p>Air Jordan shoes</p>
+            <h5>33 ETH</h5>
+        </Col>
               
-              <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/mike.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/landing-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/chanel old.jpg")}
+              style={{ width: "250px" }}
+              Link tag={Link} to="/landing-page"
+            />
+          </button>
+                  <p>chanel bag</p>
+                  <h5>37 ETH</h5>
 
-                <Link tag={Link} to="/landing-page">
-                  <p>FENDI boston bag</p>
-                  <h5>3.7 ETH</h5>
-                </Link>
               </Col>
 
               <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/mike.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
-
-                <Link tag={Link} to="/landing-page">
-                  <p>FENDI boston bag</p>
-                  <h5>3.7 ETH</h5>
-                </Link>
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/landing-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/1111.jpg")}
+              style={{ width: "250px" }}
+              Link tag={Link} to="/landing-page"
+            />
+          </button>
+                  <p>SAINT LAURENT pouch</p>
+                  <h5>29 ETH</h5>
               </Col>
 
-
               <Col className="mt-5 mt-sm-0" sm="3" xs="6">
-                <img
-                  alt="..."
-                  className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/mike.jpg")}
-                  style={{ width: "250px" , margin: "15px"}}
-                />
-
-                <Link tag={Link} to="/landing-page">
-                  <p>FENDI boston bag</p>
-                  <h5>3.7 ETH</h5>
-                </Link>
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/landing-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/bal.jpg")}
+              style={{ width: "250px" }}
+              Link tag={Link} to="/landing-page"
+            />
+          </button>
+                  <p>balenciaga wallet</p>
+                  <h5>49 ETH</h5>
               </Col>
             </Row>
           </div>

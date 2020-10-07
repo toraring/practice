@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React , { Component } from "react";
 import classnames from "classnames";
 // reactstrap components
 import {
@@ -41,6 +41,9 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
+import ReactPlayer from "react-player";
+import { Link } from "react-router-dom";
+import ImageButton from "components/UIComponents/imageButton"
 
 class RegisterPage extends React.Component {
   state = {
@@ -85,6 +88,39 @@ class RegisterPage extends React.Component {
             <div className="page-header-image" />
             <div className="content">
               <Container>
+              <Row>
+          <Col className="item"><hr style={{width: '100%', color: "white", backgroundColor:"white", height: 2, Align: "center"}}/></Col>
+          <Col className="item"><h1>NEW PRODUCT</h1></Col>
+          <Col className="item"><hr style={{width: '100%', color: "white", backgroundColor:"white", height: 2, Align: "center"}}/></Col>
+        </Row>
+        <Row>
+          <Col className="item"><hr style={{width: '100%', height: 2, Align: "center"}}/></Col>
+          <video loop="loop" autoPlay="autoplay" muted="muted" webkit-playsInline="webkit-playsinline" playsInline="playsinline" >
+                  <source src ={require("assets/video/newproduct_nike_video.mp4")}></source>
+                </video>
+          <Col className="item"><hr style={{width: '100%', height: 2, Align: "center"}}/></Col>
+        </Row>
+
+        <Row>
+                <Col className="item"><hr style={{width: '100%', color: "white", backgroundColor:"white", height: 2, Align: "center"}}/>
+                  <div button class="btn-simple btn btn-success" style={{float: 'right'}}>
+                    <Link to="Landing-page"> 
+                    <font color="cyan">등록</font></Link></div>
+                </Col>
+              </Row>
+
+              <Row>
+              <font size="150" color="white" > &nbsp; &nbsp; &nbsp; ★</font>
+              </Row>
+
+        <Row>
+        <font size="150" color="white " > &nbsp; &nbsp; TOP 8</font>
+        </Row>
+
+
+        <Row>
+          <ImageButton imagePath="assets/img/gucci.jpg" linkPage="/landing-page" itemName="GUCCI Snake wallet" itemPrice="41 ETH"></ImageButton>
+        </Row>
                 <Row>
                   <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
                     <div
@@ -97,119 +133,33 @@ class RegisterPage extends React.Component {
                       id="square8"
                       style={{ transform: this.state.squares7and8 }}
                     />
-                    <Card className="card-register">
-                      <CardHeader>
-                        <CardImg
-                          alt="..."
-                          src={require("assets/img/square-purple-1.png")}
-                        />
-                        <CardTitle tag="h4">Register</CardTitle>
-                      </CardHeader>
-                      <CardBody>
-                        <Form className="form">
-                          <InputGroup
-                            className={classnames({
-                              "input-group-focus": this.state.fullNameFocus
-                            })}
-                          >
-                            <InputGroupAddon addonType="prepend">
-                              <InputGroupText>
-                                <i className="tim-icons icon-single-02" />
-                              </InputGroupText>
-                            </InputGroupAddon>
-                            <Input
-                              placeholder="Full Name"
-                              type="text"
-                              onFocus={e =>
-                                this.setState({ fullNameFocus: true })
-                              }
-                              onBlur={e =>
-                                this.setState({ fullNameFocus: false })
-                              }
-                            />
-                          </InputGroup>
-                          <InputGroup
-                            className={classnames({
-                              "input-group-focus": this.state.emailFocus
-                            })}
-                          >
-                            <InputGroupAddon addonType="prepend">
-                              <InputGroupText>
-                                <i className="tim-icons icon-email-85" />
-                              </InputGroupText>
-                            </InputGroupAddon>
-                            <Input
-                              placeholder="Email"
-                              type="text"
-                              onFocus={e => this.setState({ emailFocus: true })}
-                              onBlur={e => this.setState({ emailFocus: false })}
-                            />
-                          </InputGroup>
-                          <InputGroup
-                            className={classnames({
-                              "input-group-focus": this.state.passwordFocus
-                            })}
-                          >
-                            <InputGroupAddon addonType="prepend">
-                              <InputGroupText>
-                                <i className="tim-icons icon-lock-circle" />
-                              </InputGroupText>
-                            </InputGroupAddon>
-                            <Input
-                              placeholder="Password"
-                              type="text"
-                              onFocus={e =>
-                                this.setState({ passwordFocus: true })
-                              }
-                              onBlur={e =>
-                                this.setState({ passwordFocus: false })
-                              }
-                            />
-                          </InputGroup>
-                          <FormGroup check className="text-left">
-                            <Label check>
-                              <Input type="checkbox" />
-                              <span className="form-check-sign" />I agree to the{" "}
-                              <a
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                terms and conditions
-                              </a>
-                              .
-                            </Label>
-                          </FormGroup>
-                        </Form>
-                      </CardBody>
-                      <CardFooter>
-                        <Button className="btn-round" color="primary" size="lg">
-                          Get Started
-                        </Button>
-                      </CardFooter>
-                    </Card>
+
                   </Col>
                 </Row>
-                <div className="register-bg" />
-                <div
+
+                
+                
+                {/* <div className="register-bg" /> */}
+                {/* <div
                   className="square square-1"
                   id="square1"
                   style={{ transform: this.state.squares1to6 }}
-                />
-                <div
+                /> */}
+                {/* <div
                   className="square square-2"
                   id="square2"
                   style={{ transform: this.state.squares1to6 }}
-                />
+                /> */}
                 <div
                   className="square square-3"
                   id="square3"
                   style={{ transform: this.state.squares1to6 }}
                 />
-                <div
+                {/* <div
                   className="square square-4"
                   id="square4"
                   style={{ transform: this.state.squares1to6 }}
-                />
+                /> */}
                 <div
                   className="square square-5"
                   id="square5"

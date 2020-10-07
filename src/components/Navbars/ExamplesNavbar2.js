@@ -33,6 +33,7 @@ import {
   UncontrolledCarousel
 } from "reactstrap";
 
+
 class PagesNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -106,7 +107,7 @@ class PagesNavbar extends React.Component {
               tag={Link}
             >
               <span>CRYPTOBERRY• </span>
-              new
+              Old
             </NavbarBrand>
 
             <button
