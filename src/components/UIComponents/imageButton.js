@@ -40,7 +40,7 @@ class ImageButton extends React.Component {
                     <img
                     alt="..."
                     className="img-fluid rounded shadow-lg"
-                    src={require("assets/img/gucci.jpg")}
+                    src={require("assets/img/gucci4.jpg")}
                     style={{ width: "250px"}}
                     />
                 </button>
@@ -77,7 +77,7 @@ class ImageButton extends React.Component {
                     />
                 </button>
                 <p>Dior belt</p>
-                  <h5>7 ETH</h5>
+                  <h5>17 ETH</h5>
             </Col>
 
             <Col className="mt-5 mt-sm-0" sm="3" xs="6">

@@ -119,8 +119,146 @@ class RegisterPage extends React.Component {
 
 
         <Row>
-          <ImageButton imagePath="assets/img/gucci.jpg" linkPage="/landing-page" itemName="GUCCI Snake wallet" itemPrice="41 ETH"></ImageButton>
+          {/* <ImageButton imagePath="assets/img/guccci.jpg" linkPage="/Product-page" itemName="GUCCI Snake wallet" itemPrice="41 ETH"></ImageButton> */}
+          <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/Product-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/gucci4.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>GUCCI Snake wallet</p>
+            <h5>41 ETH</h5>
+        </Col>
+
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/product-page2';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/ballpen.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>MONTBLAC ballpen</p>
+            <h5>9 ETH</h5>
+        </Col>
+
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/product-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/dior.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>Dior belt</p>
+            <h5>17 ETH</h5>
+        </Col>
+
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/product-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/patek.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>patekphilippe watch</p>
+            <h5>555 ETH</h5>
+        </Col>
+
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/product-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/tagheuer.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>TAGHeuer watch</p>
+            <h5>78 ETH</h5>
+        </Col>
+
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/product-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/Maison.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>maison tshirts</p>
+            <h5>12 ETH</h5>
+        </Col>
+
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/product-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/prada.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>prada backpack</p>
+            <h5>28 ETH</h5>
+        </Col>
+
+        <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+          <button type="button" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href='/product-page';
+          }}>
+            <img
+              alt="..."
+              className="img-fluid rounded shadow-lg"
+              src={require("assets/img/Lui.jpg")}
+              style={{ width: "250px" }}
+              
+            />
+          </button>
+            <p>Louis vuitton clutch</p>
+            <h5>97 ETH</h5>
+        </Col>
+
         </Row>
+
+        
                 <Row>
                   <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
                     <div

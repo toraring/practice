@@ -27,6 +27,10 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import ProductPage from "views/examples/ProductPage.js";
+import ProductPage2 from "views/examples/ProductPage2.js";
+import RegisterOld from "views/examples/RegisterOld.js";
+import Mypage from "views/examples/Mypage.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -41,8 +45,24 @@ ReactDOM.render(
         render={props => <RegisterPage {...props} />}
       />
       <Route
+        path="/product-page"
+        render={props => <ProductPage {...props} />}
+      />
+      <Route
         path="/profile-page"
         render={props => <ProfilePage {...props} />}
+      />
+      <Route
+        path="/product-page2"
+        render={props => <ProductPage2 {...props} />}
+      />
+      <Route
+        path="/register-old"
+        render={props => <RegisterOld {...props} />}
+      />
+      <Route
+        path="/my-page"
+        render={props => <Mypage {...props} />}
       />
       <Redirect from="/" to="/components" />
     </Switch>

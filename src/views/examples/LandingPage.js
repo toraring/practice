@@ -93,17 +93,79 @@ class RegisterPage extends React.Component {
           <Col className="item"><h1>OLD PRODUCT</h1></Col>
           <Col className="item"><hr style={{width: '100%', color: "white", backgroundColor:"white", height: 2, Align: "center"}}/></Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col className="item"><hr style={{width: '100%', height: 2, Align: "center"}}/></Col>
           <video loop="loop" autoPlay="autoplay" muted="muted" webkit-playsInline="webkit-playsinline" playsInline="playsinline" >
                   <source src ={require("assets/video/videoplayback.mp4")}></source>
                 </video>
           <Col className="item"><hr style={{width: '100%', height: 2, Align: "center"}}/></Col>
-        </Row>
+        </Row> */}
+         <Row className="row-grid justify-content-between align-items-center text-left">
+                <Col lg="6" md="6">
+                  <h1 className="text-white">
+                    We keep your coin <br />
+                    <span className="text-white">secured</span>
+                  </h1>
+                  <p className="text-white mb-3">
+                    A wonderful serenity has taken possession of my entire soul,
+                    like these sweet mornings of spring which I enjoy with my
+                    whole heart. I am alone, and feel...
+                  </p>
+                  <div className="btn-wrapper mb-3">
+                    <p className="category text-success d-inline">
+                      From 9.99%/mo
+                    </p>
+                    <Button
+                      className="btn-link"
+                      color="success"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                      size="sm"
+                    >
+                      <i className="tim-icons icon-minimal-right" />
+                    </Button>
+                  </div>
+                  <div className="btn-wrapper">
+                    <div className="button-container">
+                      <Button
+                        className="btn-icon btn-simple btn-round btn-neutral"
+                        color="default"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
+                      >
+                        <i className="fab fa-twitter" />
+                      </Button>
+                      <Button
+                        className="btn-icon btn-simple btn-round btn-neutral"
+                        color="default"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
+                      >
+                        <i className="fab fa-dribbble" />
+                      </Button>
+                      <Button
+                        className="btn-icon btn-simple btn-round btn-neutral"
+                        color="default"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
+                      >
+                        <i className="fab fa-facebook" />
+                      </Button>
+                    </div>
+                  </div>
+                </Col>
+                <Col lg="4" md="5">
+                  <img
+                    alt="..."
+                    className="img-fluid"
+                    src={require("assets/img/etherum.png")}
+                  />
+                </Col>
+              </Row>
         <Row>
                 <Col className="item"><hr style={{width: '100%', color: "white", backgroundColor:"white", height: 2, Align: "center"}}/>
                   <div button class="btn-simple btn btn-success" style={{float: 'right'}}>
-                    <Link to="Register-page"> 
+                    <Link to="register-old"> 
                     <font color="cyan">등록</font></Link></div>
                 </Col>
               </Row>
@@ -119,14 +181,14 @@ class RegisterPage extends React.Component {
         <Col className="mt-5 mt-sm-0" sm="3" xs="6">
           <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/Register-page';
+                                        window.location.href='/Product-page';
           }}>
             <img
               alt="..."
               className="img-fluid rounded shadow-lg"
               src={require("assets/img/air jordan old.jpg")}
               style={{ width: "250px" }}
-              Link tag={Link} to="/Register-page"
+              Link tag={Link} to="/Product-page"
             />
           </button>
             <p>Air Jordan shoes</p>
@@ -272,6 +334,8 @@ class RegisterPage extends React.Component {
                     
                   </Col>
                 </Row>
+
+
                 
                 {/* <div className="register-bg" /> */}
                 {/* <div
