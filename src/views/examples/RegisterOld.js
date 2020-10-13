@@ -228,8 +228,8 @@ class RegisterOld extends React.Component {
                   </CardBody>
                   <CardFooter>
                     <div Button className="btn-round btn btn-primary" size="lg">
-                    <Link to="Landing-page"> 
-                    <font color="white">구매하기 &nbsp;</font>
+                    <Link to="profile-page2"> 
+                    <font color="white">판매하기 &nbsp;</font>
                       </Link>
                       </div>  
                   </CardFooter>

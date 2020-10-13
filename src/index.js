@@ -27,6 +27,8 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import ProfilePage2 from "views/examples/ProfilePage2.js";
+import ProfilePage3 from "views/examples/ProfilePage3.js";
 import ProductPage from "views/examples/ProductPage.js";
 import ProductPage2 from "views/examples/ProductPage2.js";
 import RegisterOld from "views/examples/RegisterOld.js";
@@ -63,6 +65,14 @@ ReactDOM.render(
       <Route
         path="/my-page"
         render={props => <Mypage {...props} />}
+      />
+      <Route
+        path="/profile-page2"
+        render={props => <ProfilePage2 {...props} />}
+      />
+      <Route
+        path="/profile-page3"
+        render={props => <ProfilePage3 {...props} />}
       />
       <Redirect from="/" to="/components" />
     </Switch>
