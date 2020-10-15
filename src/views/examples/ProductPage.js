@@ -359,7 +359,7 @@ handleOnChange(e) {
                   <Col>
                   
                   <div button class="btn-simple btn btn-primary" style={{float: 'right'}}>
-                    <Link to="Landing-page"> 
+                    <Link to="profile-page2"> 
                     <font color="white">구매하기 &nbsp;</font>
                     <i className="tim-icons icon-cart"></i>
                     </Link>

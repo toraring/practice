@@ -225,7 +225,7 @@ class RegisterPage extends React.Component {
         <Col className="mt-5 mt-sm-0" sm="3" xs="6">
           <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/product-page';
+                                        window.location.href='/my-page';
           }}>
             <img
               alt="..."
