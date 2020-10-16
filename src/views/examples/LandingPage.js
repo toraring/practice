@@ -181,14 +181,13 @@ class RegisterPage extends React.Component {
         <Col className="mt-5 mt-sm-0" sm="3" xs="6">
           <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/Product-page';
+                                        window.location.href='/OldProduct-page2';
           }}>
             <img
               alt="..."
               className="img-fluid rounded shadow-lg"
               src={require("assets/img/air jordan old.jpg")}
               style={{ width: "250px" }}
-              Link tag={Link} to="/Product-page"
             />
           </button>
             <p>Air Jordan shoes</p>
@@ -198,14 +197,14 @@ class RegisterPage extends React.Component {
         <Col className="mt-5 mt-sm-0" sm="3" xs="6">
           <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/Register-page';
+                                        window.location.href='/OldProduct-page1';
           }}>
             <img
               alt="..."
               className="img-fluid rounded shadow-lg"
               src={require("assets/img/monc old.jpg")}
               style={{ width: "250px" }}
-              Link tag={Link} to="/Register-page"
+              
             />
           </button>
             <p>Moncler padding</p>
@@ -223,7 +222,7 @@ class RegisterPage extends React.Component {
               className="img-fluid rounded shadow-lg"
               src={require("assets/img/rolex old.jpg")}
               style={{ width: "250px" }}
-              Link tag={Link} to="/Register-page"
+
             />
           </button>
             <p>rolex watch</p>
@@ -247,7 +246,9 @@ class RegisterPage extends React.Component {
                   <h5>37 ETH</h5>
 
               </Col>
+              </Row>
 
+          <Row>
               <Col className="mt-5 mt-sm-0" sm="3" xs="6">
           <button type="button" onClick={(e) => {
                                         e.preventDefault();

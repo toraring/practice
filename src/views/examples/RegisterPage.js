@@ -187,7 +187,9 @@ class RegisterPage extends React.Component {
             <p>patekphilippe watch</p>
             <h5>555 ETH</h5>
         </Col>
+        </Row>
 
+          <Row>
         <Col className="mt-5 mt-sm-0" sm="3" xs="6">
           <button type="button" onClick={(e) => {
                                         e.preventDefault();

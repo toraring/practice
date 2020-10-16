@@ -21,7 +21,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import ExamplesNavbar2 from "components/Navbars/ExamplesNavbar2.js";
 import Footer from "components/Footer/Footer.js";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import bigChartData from "variables/charts.js";
@@ -29,17 +29,17 @@ import { Link } from "react-router-dom";
 
 const carouselItems = [
   {
-    src: require("assets/img/ballpen4.JPG"),
+    src: require("assets/img/monc2.jpg"),
     altText: "Slide 1",
-    caption: "2020 프리폴 컬렉션"
+    caption: "2018 윈터 컬렉션"
   },
   {
-    src: require("assets/img/ballpen5.JPG"),
+    src: require("assets/img/monc3.jpg"),
     altText: "Slide 2",
     caption: "cryptoberry는 정품만 취급합니다"
   },
   {
-    src: require("assets/img/ballpen6.JPG"),
+    src: require("assets/img/monc4.jpg"),
     altText: "Slide 3",
     caption: "정품이 아닐시 1000% 보상"
   }
@@ -49,7 +49,7 @@ let ps = null;
 
 
 
-class ProductPage extends React.Component {
+class OldProductPage1 extends React.Component {
   componentDidMount() {
     document.body.classList.toggle("Product-page");
   }
@@ -59,18 +59,15 @@ class ProductPage extends React.Component {
 
   constructor(props){
   super(props);
-
+    
   this.state={
-    value:0
+    value:0,min:0,counter:0
   };
   this.handleClickPlus=this.handleClickPlus.bind(this);
   this.handleClickMinus=this.handleClickMinus.bind(this);
   this.handleOnChange=this.handleOnChange.bind(this);
   
 }
-
-
-
 handleClickPlus(){
   this.setState({
     value:this.state.value+1
@@ -81,7 +78,6 @@ handleClickMinus(){
   if(this.state.value <=0) return;
   this.setState({
     value:this.state.value-1
-  
   });
 }
 
@@ -93,11 +89,9 @@ handleOnChange(e) {
   });
 }
 
-
   selectChange(e){
     this.setState({
       selectedValue: e.target.value
-      
     })
   }
   render() {
@@ -107,7 +101,7 @@ handleOnChange(e) {
        
       
   
-       <ExamplesNavbar />
+       <ExamplesNavbar2 />
 
            <img
               alt="..."
@@ -183,7 +177,7 @@ handleOnChange(e) {
                   
                   
                   <Col className="mx-auto col-md-12 col-lg-6">
-                    <h2 className="title">Monblanc ballpen</h2>
+                    <h2 className="title">Moncler padding</h2>
 
                     <div className="stars stars-right">
                       <div className="stars text-warning">
@@ -206,25 +200,26 @@ handleOnChange(e) {
                         <i className="far fa-star ml-1">
                           
                         </i>
-                        <p className="d-inline ml-1">(87 customer reviews)</p>
+                        <p className="d-inline ml-1">(11 customer reviews)</p>
                       </div>
                     </div>
                   <br/>
-                  <h2 className="main-price">9 ETH</h2>
+                  <h2 className="main-price">33 ETH</h2>
 
                   <Col>
+                  
                   <div button class="btn-simple btn btn-success" style={{float: 'left'}}>
                     <Link to="profile-page2"> 
                      <i className="tim-icons icon-tag"></i>
-                    <font color="white"> &nbsp; 판매중 </font>
-                    {/* <i className="tim-icons icon-tag"></i> */}
+                    <font color="white"> &nbsp; 판매완료 </font>
+                  
                     </Link>
                     </div>  
+                  
                   </Col>
                   <br/><br/><br/>
-
                   <h5 className="category">Description</h5>
-                  <p className="description">몽블랑 픽스 PIX 블랙 볼펜 떠오르는 남자의 필수품</p><br/>
+                  <p className="description">에어 조던5 파이어레드 서태웅 신발입니다. 상태 A급입니다^^</p><br/>
 
                  
 
@@ -233,10 +228,6 @@ handleOnChange(e) {
                     <label>
                       &nbsp; &nbsp; 수량
                     </label>
-
-
-
-                   
                     <div className="input-group">
                       <div className="input-group-btn">
                         <button onClick={this.handleClickMinus} type="button" className="btn-round btn-simple btn btn-warning">
@@ -251,7 +242,7 @@ handleOnChange(e) {
                     </div> 
 
                    
-                    <input id="myNumber" type="text" className="input-number form-control"  value={this.state.value}/>
+                    <input id="myNumber" type="text" className="input-number form-control"  value={this.state.value} onChange={this.handleOnChange}/>
                     
 
                     <div className="input-group">
@@ -310,7 +301,7 @@ handleOnChange(e) {
 
                           </div>
                         </div>
-                      </div> */}
+                      </div> 
                       
                       {/* <div className="react-select__indicators css-1wy0on6">
                         <span className="react-select__indicator-separator css-1okebmr-indicatorSeparator"></span>
@@ -350,6 +341,7 @@ handleOnChange(e) {
                       <option value="gita">기타</option>
                     </select>
                  
+                
 
                   {/* </div>
                   </div>
@@ -371,14 +363,16 @@ handleOnChange(e) {
                   
 
                   </div> */}
-                
-                  
                   
                       
                   </Col>
+
+                  
+
                   <Col>
+                  
                   <div button class="btn-simple btn btn-primary" style={{float: 'right'}}>
-                    <Link to="Landing-page"> 
+                    <Link to="profile-page2"> 
                     <font color="white">구매하기 &nbsp;</font>
                     <i className="tim-icons icon-cart"></i>
                     </Link>
@@ -387,6 +381,8 @@ handleOnChange(e) {
                   </Col>
 
                   </div>
+
+                
                   </Col>
                   
                   
@@ -600,12 +596,12 @@ handleOnChange(e) {
                   <a href="#pablo">
                   <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/product-page';
+                                        window.location.href='/Product-page2';
           }}>
             <img
               alt="..."
               className="img-fluid rounded shadow-lg"
-              src={require("assets/img/gucci5.jpg")}
+              src={require("assets/img/ballpen3.jpg")}
               
             />
           </button>
@@ -614,14 +610,14 @@ handleOnChange(e) {
                 <div className="card-body">
                   <h6 className="category text-warning">Trending</h6>
                   <h4 className="card-title">
-                    <a href="#pablo" className="text-white card-link">GUCCI Snake wallet</a>
+                    <a href="#pablo" className="text-white card-link">monblanc ballpen</a>
                   </h4>
                   <div className="card-description">
-                  GG 수프림 캔버스 지갑. 구찌 하우스의 시그니처 디테일로 끊임없이 활용되는 친환경 소재.
+                    마이스터스튁 클래식 볼펜은 고급 블랙 레진 캡과 배럴로 대표되는 특별한 디자인 아이콘입니다.
                   </div>
                   <div className="card-footer">
                     <div className="price-container">
-                      <span className="price">41 ETH</span>
+                      <span className="price">9 ETH</span>
                     </div>
                     <button id="tooltip449471879" className="btn-simple btn-icon btn-round pull-right btn btn-warning">
                       <i className="tim-icons icon-heart-2">
@@ -639,7 +635,7 @@ handleOnChange(e) {
                 <a href="#pablo">
                   <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/Register-page';
+                                        window.location.href='/product-page2';
           }}>
             <img
               alt="..."
@@ -679,7 +675,7 @@ handleOnChange(e) {
                 <a href="#pablo">
                   <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/Register-page';
+                                        window.location.href='/product-page2';
           }}>
             <img
               alt="..."
@@ -718,7 +714,7 @@ handleOnChange(e) {
                 <a href="#pablo">
                   <button type="button" onClick={(e) => {
                                         e.preventDefault();
-                                        window.location.href='/Register-page';
+                                        window.location.href='/product-old';
           }}>
             <img
               alt="..."
@@ -767,4 +763,4 @@ handleOnChange(e) {
   }
 }
 
-export default ProductPage;
+export default OldProductPage1;

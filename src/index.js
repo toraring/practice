@@ -31,6 +31,8 @@ import ProfilePage2 from "views/examples/ProfilePage2.js";
 import ProfilePage3 from "views/examples/ProfilePage3.js";
 import ProductPage from "views/examples/ProductPage.js";
 import ProductPage2 from "views/examples/ProductPage2.js";
+import OldProductPage1 from "views/examples/OldProductPage1.js";
+import OldProductPage2 from "views/examples/OldProductPage2.js";
 import RegisterOld from "views/examples/RegisterOld.js";
 import Mypage from "views/examples/Mypage.js";
 
@@ -73,6 +75,14 @@ ReactDOM.render(
       <Route
         path="/profile-page3"
         render={props => <ProfilePage3 {...props} />}
+      />
+      <Route
+        path="/OldProduct-page1"
+        render={props => <OldProductPage1 {...props} />}
+      />
+      <Route
+        path="/OldProduct-page2"
+        render={props => <OldProductPage2 {...props} />}
       />
       <Redirect from="/" to="/components" />
     </Switch>

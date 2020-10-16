@@ -205,6 +205,19 @@ handleOnChange(e) {
                     </div>
                   <br/>
                   <h2 className="main-price">41 ETH</h2>
+
+                  <Col>
+                  
+                  <div button class="btn-simple btn btn-success" style={{float: 'left'}}>
+                    <Link to="profile-page2"> 
+                     <i className="tim-icons icon-tag"></i>
+                    <font color="white"> &nbsp; 판매중 </font>
+                    {/* <i className="tim-icons icon-tag"></i> */}
+                    </Link>
+                    </div>  
+                  
+                  </Col>
+                  <br/><br/><br/>
                   <h5 className="category">Description</h5>
                   <p className="description">GG 수프림 캔버스 지갑. 구찌 하우스의 시그니처 디테일로 끊임없이 활용되는 강렬한 컬러의 킹스네이크 프린트. 친환경 소재.</p><br/>
 
@@ -368,6 +381,8 @@ handleOnChange(e) {
                   </Col>
 
                   </div>
+
+                
                   </Col>
                   
                   
