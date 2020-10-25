@@ -32,12 +32,14 @@
   },
   "homepage": "https://demos.creative-tim.com/blk-design-system-react/#/",
   "dependencies": {
+    "caver-js": "1.4.1",
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
+    "connect-privkey-to-provider": "0.0.3",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
+    "ipfs-http-client": "32.0.1",
     "moment": "2.24.0",
-    "node-sass": "4.13.1",
     "nouislider": "14.2.0",
     "perfect-scrollbar": "1.5.0",
     "pure-react-carousel": "^1.27.4",
@@ -50,17 +52,12 @@
     "react-router-dom": "5.1.2",
     "react-scripts": "^3.4.3",
     "reactstrap": "8.4.1",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "truffle-hdwallet-provider-klaytn": "^1.0.13-a"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "compile-sass": "node-sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css",
-    "minify-sass": "node-sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css --source-map true"
+    "webpack": "webpack-dev-server --progress",
+    "webpack-dev": "webpack --mode development --progress"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -74,5 +71,25 @@
   "optionalDependencies": {
     "eslint-plugin-flowtype": "3.13.0",
     "typescript": "3.8.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "add": "^2.0.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "interpolate-html-plugin": "^3.0.0",
+    "node-sass": "^4.13.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.4",
+    "style-loader": "^2.0.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "yarn": "^1.22.10"
   }
 }
